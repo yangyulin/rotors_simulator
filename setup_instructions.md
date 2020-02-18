@@ -91,7 +91,7 @@ Hook up Pixhawk to your computer via USB (should appear as /dev/ttyACM0 on linux
 
 To launch a fixed-wing simulation, go to your catkin workspace and invoke (choosing one of the param values at a time...):
 
-"roslaunch rotors_gazebo fixed_wing_hil.launch verbose:={false, true} world_name:={fw_playground, yosemite, davos, hinwil} uav_name:={techpod_TJ_flex, techpod_TJ, techpod_X_flex, techpod_X, list_not_complete} spawn_tc:={false, true} enable_wind:={true, false} record_rosbag:={false, true} rosbag_path:={"/path/to/somewhere/"}"
+"roslaunch rotors_gazebo fixed_wing_hil.launch verbose:={false, true} world_name:={fw_playground, yosemite, davos, hinwil} uav_name:={techpod_TJ_flex, techpod_TJ, techpod_X_flex, techpod_X, tiltwing, a4p0} spawn_tc:={false, true} enable_wind:={true, false} record_rosbag:={false, true} rosbag_path:={"/path/to/somewhere/"}"
 
 where "verbose" can be used to enable debug output (e.g. sim-rate, message statistics etc), "world_name" sets the world in which the UAV spawns and "uav_name" is used to select the UAV. "spawn_tc" further controls if tracking cameras are placed (ground view) and "enable_wind" indicates if the wind specified in the uav's *.xacro is enabled. Defaults are the first options in each brace. In your workspace e.g.invoke:
 
