@@ -29,13 +29,9 @@ Get RotorS and additional dependencies
 
 ```
 $ cd ~/catkin_ws/src
-$ git clone -b feature/fw_hil_rotors https://github.com/ethz-asl/rotors_simulator.git
+$ git clone -b feature/tiltwing https://github.com/david-rohr/rotors_simulator.git
 $ git clone https://github.com/ethz-asl/mav_comm.git
 $ git clone https://github.com/catkin/catkin_simple.git
-```
-If you want upstream mavros, do:
-
-```
 $ cd ~/catkin_ws
 $ wstool init src
 $ rosinstall_generator --rosdistro melodic mavlink | tee /tmp/mavros.rosinstall
@@ -45,21 +41,7 @@ $ wstool update -t src -j4
 $ rosdep install --from-paths src --ignore-src -y
 $ ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh
 ```
-To use asl-ethz/fw_mavros version (not tested yet, adapted from https://github.com/ethz-asl/fw_mavros), do:
 
-```
-$ pip install future
-$ sudo apt-get update
-$ sudo apt-get install ros-kinetic-geographic-msgs libgeographic-dev ros-kinetic-diagnostic-updater ros-kinetic-tf2-ros ros-kinetic-tf2-eigen ros-kinetic-angles ros-kinetic-eigen-conversions
-$ sudo geographiclib-get-geoids egm96-5
-$ cd ~/catkin_ws/src
-$ git clone git@github.com:mavlink/mavlink-gbp-release
-$ cd ~/catkin_ws/src/mavlink-gbp-release
-$ git checkout debian/melodic/mavlink
-$ cd ~/catkin_ws/src
-$ git clone git@github.com:ethz-asl/fw_mavros
-$ catkin build mavros
-```
 Note: HIL simulation currently requires the extended ASLUAV mavlink dialect defined here: https://github.com/ethz-asl/fw_mavlink/blob/55397e58ebba631165b0528eb75d2ffec0ccf919/message_definitions/v1.0/ASLUAV.xml. After the above installation steps, replace the ASLUAV.xml in /catkin_ws/src/mavlink-gbp-release/message_definitions/v1.0/ with the ASLUAV.xml found under the link given above... A bit hacky at the moment, tb improved in the future. You can then proceed to build the catkin workspace:
 
 ### 4. Build
