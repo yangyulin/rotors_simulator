@@ -6,3 +6,10 @@
 *~
 */models/iris/*.sdf
 *.user
+
+cmake-build-debug
+build
+Build
+*.*~
+.idea
+doxgen_generated
