@@ -1,8 +1,0 @@
-prefix=/home/lin/Data/project/catkin_ws_rotors/src/rotors_simulator/rotors_description/cmake-build-debug/devel
-
-Name: rotors_description
-Description: Description of rotors_description
-Version: 2.2.3
-Cflags: 
-Libs: -L/home/lin/Data/project/catkin_ws_rotors/src/rotors_simulator/rotors_description/cmake-build-debug/devel/lib 
-Requires: 

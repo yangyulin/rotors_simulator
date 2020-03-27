@@ -1,8 +1,0 @@
-prefix=/home/lin/Data/project/catkin_ws_rotors/src/rotors_simulator/rotors_gazebo/cmake-build-debug/devel
-
-Name: rotors_gazebo
-Description: Description of rotors_gazebo
-Version: 2.2.3
-Cflags: 
-Libs: -L/home/lin/Data/project/catkin_ws_rotors/src/rotors_simulator/rotors_gazebo/cmake-build-debug/devel/lib 
-Requires: gazebo_msgs geometry_msgs mav_msgs roscpp sensor_msgs
