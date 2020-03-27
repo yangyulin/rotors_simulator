@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lin/Data/project/catkin_ws_rotors/src/rotors_simulator/rotors_gazebo/cmake-build-debug/devel/setup.sh
